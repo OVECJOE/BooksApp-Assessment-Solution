@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Email</title>
+  <style>
+    * {
+      margin: 2px;
+      padding: 2px;
+    }
+
+    body {
+      background-color: wheat;
+      text-align: center;
+      font-family: monospace;
+    }
+
+    h1 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: brown;
+    }
+
+    header img {
+      width: 30%;
+      height: 10%;
+    }
+
+    .body {
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 5%;
+      background-color: aliceblue;
+      border: 2px dashed red;
+      border-radius: 12px 30px;
+    }
+
+    footer {
+      margin-top: 20%;
+      font-size: small;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+    }
+
+    span {
+      color: red;
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+    }
+
+    .copyright {
+      color: grey;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+      <img
+        src="https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942408_960_720.jpg"
+        alt="Top Image">
+    <h1>Welcome {{ username }}</h1>
+  </header>
+  <div class="body">
+    <h2>Welcome Letter</h2>
+    <p>
+      This is to inform you that you have been selected for the internship you applied for some weeks ago at our company.
+      We look forward to working with you. Further details would be given very soon. <span>Enjoy your day {{ username }}!</span>
+    </p>
+  </div>
+  <footer>
+    <div class="dont-reply">
+      This email was automatically generated. Do not reply because you response would not be considered.
+    </div>
+    <div class="contact-us">
+      To reach out to us, send an email to xyz123@example.com.
+    </div>
+    <div class="copyright">
+      Copyright &copy; xyz company.
+    </div>
+  </footer>
+</body>
+
+</html>
