@@ -1,1 +1,2 @@
-web: cd email_app && python3 manage.py runserver 0.0.0.0:$PORT
+web: python3 email_app/manage.py runserver 0.0.0.0:$PORT
+release: python3 email_app/manage.py migrate
